@@ -1,0 +1,290 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Current Website</title>
+    <!-- 1. 20 css property
+    2. layouts
+    navigation bar -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        box-sizing: border-box;
+        color: #dfdede;
+      }
+      /* h1 {
+            background-color: red;
+            font-size: 35px;
+            color: skyblue;
+        } */
+      /* form {
+            background-color: purple;
+            color: white;
+            width: 100vw;
+        }
+        input {
+            width: 80%;
+        }
+        .currentClass {
+            background-color: skyblue;
+            color: white;
+        }
+        .parent {
+            width: 100%;
+            height: 100vh;
+            background-color: blue;
+        }
+        .child-1 {
+            width: 200px;
+            height: 203px;
+            background-color: red;
+        }
+        .child-2 {
+            width: 200px;
+            height: calc(100% - 203px);
+            background-color: black;
+        } */
+
+      .container {
+        background-color: #fff;
+        width: 100%;
+        height: 300px;
+        padding: 10px;
+      }
+      .subcontainer {
+        background: linear-gradient(blue, darkblue);
+        padding-bottom: 10px;
+        border-radius: 10p;
+      }
+
+      .btn {
+        background-color: rgba(255, 255, 255, 0.3);
+        color: white;
+        text-decoration: none;
+        padding: 15px;
+        display: inline-block;
+        border-radius: 5px;
+        margin-left: 10px;
+      }
+
+      .btn-group {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 10px;
+      }
+
+      .title {
+        text-align: center;
+        font-size: 50px;
+      }
+
+      img {
+        color: grey;
+      }
+
+      .search-div {
+        width: fit-content;
+        border-radius: 5px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        margin: 20px 0;
+      }
+
+      .search {
+        width: 80%;
+        padding: 20px 10px;
+        width: 50vw;
+        border: 0;
+        outline: 0;
+      }
+
+      form {
+        width: fit-content;
+        margin: 0 auto;
+      }
+
+      .icon {
+        width: 25px;
+        color: green;
+      }
+
+      input {
+        color: black;
+      }
+
+      .round {
+        background-color: #fff;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .general {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 10px;
+      }
+
+      span {
+        font-size: 10px;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .icon-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100px;
+      }
+
+      .icon-div > div {
+        display: flex;
+        justify-content: center;
+        margin: 5px auto;
+      }
+
+      .p {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="subcontainer">
+        <div class="btn-group">
+          <a href="" class="btn">Custom Size</a>
+          <a href="" class="btn">Upload</a>
+        </div>
+        <h1 class="title">Meet Magic Studio</h1>
+        <form action="">
+          <div class="search-div">
+            <img src="searchengin.svg" class="icon" alt="search-icon" />
+            <input
+              class="search"
+              type="text"
+              placeholder="Use 5+ words to describe your design"
+            />
+          </div>
+        </form>
+        <div class="general">
+          <div class="icon-div">
+            <div class="round">
+              <img src="hand-sparkles-solid.svg" class="icon" alt="" />
+            </div>
+            <div>
+              <span>For you</span>
+            </div>
+          </div>
+          <div class="icon-div">
+            <div class="round">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 384 512"
+              >
+                <path
+                  d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z"
+                />
+              </svg>
+            </div>
+            <div class="p">
+              <span>Docs</span>
+            </div>
+          </div>
+          <div class="icon-div">
+            <div class="round">
+              <img src="chess-board-solid.svg" class="icon" alt="" />
+            </div>
+            <div class="p">
+              <span>Whiteboards</span>
+            </div>
+          </div>
+          <div class="icon-div">
+            <div class="round">
+              <img src="person-chalkboard-solid.svg" class="icon" alt="" />
+            </div>
+            <div class="p">
+              <span>Presentation</span>
+            </div>
+          </div>
+          <div class="icon-div">
+            <div class="round">
+              <img src="heart-regular.svg" class="icon" alt="" />
+            </div>
+            <div class="p">
+              <span>Social Media</span>
+            </div>
+          </div>
+          <div class="icon-div">
+            <div class="round">
+              <img src="video-solid.svg" class="icon" alt="" />
+            </div>
+            <div class="p">
+              <span>Video</span>
+            </div>
+          </div>
+          <div class="icon-div">
+            <div class="round">
+              <img src="pager-solid.svg" class="icon" alt="" />
+            </div>
+            <div>
+              <span>Websites</span>
+            </div>
+          </div>
+          <div class="icon-div">
+            <div class="round">
+              <span
+                style="
+                  color: black;
+                  font-size: 20px;
+                  font-weight: 900;
+                  line-height: 60px;
+                "
+              >
+                ...
+              </span>
+            </div>
+            <div>
+              <span>More</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- cascading style sheet
+1. Inline css
+2. <style></style>
+3. A separate css file
+4. Within JS
+
+Ass 1: Read about rem and em
+
+aspect ratio: 
+
+Reletive Measurement e.g rem, em, %, vw, vh
+Absolute Measurent e.g px, cm 
+
+parent element
+child element
+
+targetting
+
+1. Id
+2. class
+3. tags --> -->
